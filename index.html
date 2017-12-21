@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TawriaTaxi</title>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <section class="main-section">
+
+        <!-- Navigation  -->
+
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a id="order" onclick="orderPageAppear()" href="#">Order</a></li>
+                <li><a id="price" href="#">Price</a></li>
+                <li><a id="about" href="#">About us</a></li>
+                <li><a id="contact" href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--  Logo  -->
+
+        <div class="logo">
+            <i class="fa fa-eercast" aria-hidden="true"></i>
+            <h1>Tawria Taxi</h1>
+        </div>
+
+        <!--  Car  -->
+        <div class="car">
+            <div class="car-image">
+                <div class="car-item car-item1">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                </div>
+                <div class="car-item car-item2">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                </div>
+                <div class="car-item car-item3">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--   Order  -->
+
+        <div id="order-page">
+            <h2>Order taxi:</h2>
+            <form action="post">
+                <input type="text" placeholder="From:">
+                <input type="text" placeholder="To:">
+                <input type="text" placeholder="Name:">
+                <input type="text" placeholder="Phone number">
+                <input type="text" placeholder="Email">
+                <button type="submit">SEND</button>
+            </form>
+            <i onclick="orderPageClose()" class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+        <div class="price-page">
+
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

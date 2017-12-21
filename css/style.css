@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+}
+.main-section {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgba(255,255,255,0.5), rgba(0,0,0,0.5)), url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*  Navigation  */
+
+.main-section .navigation{
+  padding: 0;
+}
+.main-section .navigation ul {
+  padding: 0;
+  margin: 0;
+}
+.navigation li {
+  padding: 50px 30px;
+  display: block;
+  text-align: center;
+  width: 100px;
+}
+.navigation li a{
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+  font-size: 1.5em;
+  font-family: 'PT Sans', sans-serif;
+}
+.navigation li a:hover{
+  color: #2F4F4F;
+}
+
+/*  Order  */
+
+#order-page {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  height: 60vh;
+  right: 10%;
+  background-color: rgba(47,79,79,0.6);
+  text-align: center;
+  color: #fff;
+}
+#order-page i {
+  position: absolute;
+  top: 5px;
+  color: #fff;
+  font-size: 1.2em;
+  right: 5px;
+  cursor: pointer;
+}
+#order-page form {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+#order-page input {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+}
+#order-page button {
+  padding: 5px 20px;
+  background-color: #fff;
+  font-weight: 700;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  transition: 0.4s;
+  color: #2F4F4F;
+}
+#order-page button:hover{
+  color: #fff;
+  background-color: #2F4F4F;
+  cursor: pointer;
+}
+
+/*  Logo  */
+
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.logo i, h1 {
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  color: #fff;
+  font-size: 2em;
+}
+.logo h1 {
+  font-family: 'Amatic SC', cursive;
+}
+/*  Car  */
+
+.car .car-image {
+  background-image: url(../img/car.png);
+  width: 700px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.car .car-image .car-item {
+  position: absolute;
+  cursor: pointer;
+  transition: 0.4s;
+} 
+.car .car-image .car-item i {
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.2);
+  border: 2px solid #fff;
+  padding: 8px;
+  font-size: 1.2em;
+  color: #fff;
+}
+.car .car-image .car-item1 {
+  top: 110px;
+  left: 105px;
+}
+.car .car-image .car-item2 {
+  top: 210px;
+  left: 50px;
+}
+.car .car-image .car-item3 {
+  top: 330px;
+  left: 100px;
+}
+.car .car-image .car-item:hover i{
+  color: #2F4F4F;
+  border: 2px solid #2F4F4F;
+}
+.car .car-image .car-item:after {
+  content: "";
+  background-color: rgba(47,79,79,0.6);
+  padding: 8px;
+  opacity: 0;
+  transition: 0.4s;
+  border-radius: 4px;
+  color: #fff;
+}
+.car .car-image .car-item1:after {
+  content: "Instant payments by the app"
+}
+.car .car-image .car-item2:after {
+  content: "User and payments data safety"
+}
+.car .car-image .car-item3:after {
+  content: "Fair prices visible on the screen"
+}
+.car .car-image .car-item:hover:after {
+  opacity: 1;
+}
+
+
