@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>TawriaTaxi</title>
+    <title>Tawria Taxi</title>
 
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
@@ -22,9 +22,9 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a id="order" onclick="orderPageAppear()" href="#">Order</a></li>
-                <li><a id="price" href="#">Price</a></li>
-                <li><a id="about" href="#">About us</a></li>
-                <li><a id="contact" href="#">Contact</a></li>
+                <li><a id="price" onclick="pricePageAppear()" href="#">Price</a></li>
+                <li><a id="about" onclick="aboutPageAppear()" href="#">About us</a></li>
+                <li><a id="contact" onclick="contactPageAppear()" href="#">Contact</a></li>
             </ul>
         </div>
 
@@ -52,21 +52,96 @@
 
         <!--   Order  -->
 
-        <div id="order-page">
-            <h2>Order taxi:</h2>
-            <form action="post">
-                <input type="text" placeholder="From:">
-                <input type="text" placeholder="To:">
-                <input type="text" placeholder="Name:">
-                <input type="text" placeholder="Phone number">
-                <input type="text" placeholder="Email">
-                <button type="submit">SEND</button>
-            </form>
+        <div id="order-page" class="page">
+            <div class="page-content">
+                <h2>Order taxi:</h2>
+                <form action="post">
+                    <input type="text" placeholder="From:">
+                    <input type="text" placeholder="To:">
+                    <input type="text" placeholder="Name:">
+                    <input type="text" placeholder="Phone number">
+                    <input type="text" placeholder="Email">
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
             <i onclick="orderPageClose()" class="fa fa-times" aria-hidden="true"></i>
         </div>
 
-        <div class="price-page">
+        <!--  Price  -->
 
+        <div id="price-page" class="page">
+            <div class="page-content">
+                <h2>Price list</h2>
+                <table>
+                    <tr>
+                        <td>– initial charge for all tariffs</td>
+                        <td>7,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>– stopover charge for 1 hour for all tariffs</td>
+                        <td>38,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>– tariff 1 ( 1 km from Monday to Saturday, from 6.00 to 22.00)</td>
+                        <td>2,50 zł</td>
+                    </tr>
+                    <tr>
+                        <td>– tariff 2 (1 km from 22.00 to 6.00 as well as on Sundays and festivals)</td>
+                        <td>3,50 zł</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>TRANSPORT FARES OUTSIDE THE FIRST TAXI ZONE</td>
+                    </tr>
+                    <tr>
+                        <td>– tariff 3 (1 km, Monday to Saturday from 6.00 to 22.00)</td>
+                        <td>5,00</td>
+                    </tr>
+                    <tr>
+                        <td>– tariff 4 (1 km, from 22.00 to 6.00 as well as on Sundays and festivals)</td>
+                        <td>7,00</td>
+                    </tr>
+                </table>
+            </div>
+            <i onclick="pricePageClose()" class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        
+    <!--  About us  -->
+   
+        <div id="about-page" class="page">
+           <div class="about-img"></div>
+            <div class="page-content">
+                <h2>About us</h2>
+                <div class="about-inner">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quisquam, ullam ipsum quidem reiciendis quasi, illo molestiae accusantium officiis vitae reprehenderit distinctio. Possimus temporibus dolor recusandae totam est, ipsa natus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus qui odit quis sit vero adipisci, ipsa unde nam. Sit amet ipsa dolorem cupiditate possimus magnam, rerum reiciendis dolore minus, beatae!Sit amet ipsa dolorem cupiditate possimus magnam, rerum reiciendis dolore minus, beatae!</p>
+                </div>
+            </div>
+            <i onclick="aboutPageClose()" class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        
+    <!--  Contact  -->
+           
+        <div id="contact-page" class="page">
+            <div class="page-content">
+                <h2>Contact us</h2>
+                <div class="contact-inner">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>608 998 998</p>
+                    <p>+48 909 998 998</p>
+                </div>
+                <div class="contact-inner">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <p>tawriataxi@gmail.com</p>
+                </div>
+                <div class="contact-inner">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p>Krakow, ul. Lowiskiego 12,</p>
+                    <p> 31-876</p>
+                </div>
+            </div>
+            <i onclick="contactPageClose()" class="fa fa-times" aria-hidden="true"></i>
         </div>
 
     </section>

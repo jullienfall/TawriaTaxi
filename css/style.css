@@ -1,3 +1,5 @@
+/* Main */
+
 body {
   margin: 0;
 }
@@ -7,6 +9,9 @@ body {
   background-image: linear-gradient(to bottom right, rgba(255,255,255,0.5), rgba(0,0,0,0.5)), url(../img/background.jpg);
   background-position: center;
   background-size: cover;
+}
+h2 {
+    text-transform: uppercase;
 }
 
 /*  Navigation  */
@@ -19,7 +24,7 @@ body {
   margin: 0;
 }
 .navigation li {
-  padding: 50px 30px;
+  padding: 35px 30px;
   display: block;
   text-align: center;
   width: 100px;
@@ -35,60 +40,15 @@ body {
   color: #2F4F4F;
 }
 
-/*  Order  */
-
-#order-page {
-  display: none;
-  position: fixed;
-  top: 20%;
-  left: 20%;
-  height: 60vh;
-  right: 10%;
-  background-color: rgba(47,79,79,0.6);
-  text-align: center;
-  color: #fff;
-}
-#order-page i {
-  position: absolute;
-  top: 5px;
-  color: #fff;
-  font-size: 1.2em;
-  right: 5px;
-  cursor: pointer;
-}
-#order-page form {
-  text-align: center;
-  width: 70%;
-  margin: 0 auto;
-}
-#order-page input {
-  width: 100%;
-  padding: 5px;
-  margin: 10px 0;
-}
-#order-page button {
-  padding: 5px 20px;
-  background-color: #fff;
-  font-weight: 700;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  transition: 0.4s;
-  color: #2F4F4F;
-}
-#order-page button:hover{
-  color: #fff;
-  background-color: #2F4F4F;
-  cursor: pointer;
-}
-
 /*  Logo  */
 
 .logo {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 25px;
+  right: 25px;
 }
-.logo i, h1 {
+.logo i, 
+.logo h1 {
   display: inline-block;
   padding: 5px;
   margin: 0;
@@ -98,6 +58,7 @@ body {
 .logo h1 {
   font-family: 'Amatic SC', cursive;
 }
+
 /*  Car  */
 
 .car .car-image {
@@ -161,4 +122,110 @@ body {
   opacity: 1;
 }
 
+/*  Page  */
 
+.page {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  right: 15%;
+  bottom: 10%;
+  min-height: 500px;
+  max-height: 600px;
+  background-color: rgba(47,79,79,0.8);
+  text-align: center;
+  color: #fff;
+}
+.page .page-content {
+  width: 80%;
+  margin: 0 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.page .fa-times {
+  position: absolute;
+  top: 5px;
+  color: #fff;
+  font-size: 1.2em;
+  right: 5px;
+  cursor: pointer;
+}
+
+/*  Order  */
+
+#order-page input {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid #fff;
+}
+#order-page button {
+  padding: 7px 20px;
+  background-color: #fff;
+  font-weight: 700;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  transition: 0.4s;
+  color: #2F4F4F;
+  margin: 15px;
+}
+#order-page button:hover{
+  color: #fff;
+  background-color: #2F4F4F;
+  cursor: pointer;
+}
+
+/*  Price  */
+
+#price-page .page-content table {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #fff;
+  background-color: rgba(255,255,255,0.3);
+  margin: 10px 0;
+}
+#price-page .page-content table td {
+  padding: 10px;
+}
+
+/*  About  */
+
+#about-page .about-inner {
+    float: left;
+    width: 45%;
+}
+#about-page .page-content{
+    margin: 0 5%;
+    width: 90%;
+}
+#about-page .about-img{
+    background-image: url(../img/about.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+}
+
+/*  Contact  */
+
+#contact-page .contact-inner {
+    float: left;
+    width: 33.33%;
+    padding: 30px 0;
+}
+#contact-page .contact-inner i {
+    font-size: 2.6em;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#contact-page .contact-inner i:hover{
+    color: #2F4F4F;
+}
