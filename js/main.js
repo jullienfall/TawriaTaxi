@@ -39,3 +39,10 @@ function aboutPageAppear() {
 function aboutPageClose() {
     document.getElementById('about-page').style.display = "none";
 }
+
+function closeAll(){
+    document.getElementById('order-page').style.display = "none";
+    document.getElementById('price-page').style.display = "none";
+    document.getElementById('about-page').style.display = "none";
+    document.getElementById('contact-page').style.display = "none";
+}

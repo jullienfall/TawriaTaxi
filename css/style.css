@@ -1,7 +1,10 @@
 /* Main */
-
+*{
+    box-sizing: border-box;
+}
 body {
   margin: 0;
+  font-family: 'Work Sans', sans-serif;
 }
 .main-section {
   width: 100%;
@@ -26,8 +29,8 @@ h2 {
 .navigation li {
   padding: 35px 30px;
   display: block;
-  text-align: center;
-  width: 100px;
+  text-align: left;
+  width: 200px;
 }
 .navigation li a{
   text-decoration: none;
@@ -45,7 +48,7 @@ h2 {
 .logo {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 40px;
 }
 .logo i, 
 .logo h1 {
@@ -59,6 +62,17 @@ h2 {
   font-family: 'Amatic SC', cursive;
 }
 
+/*  Order now  */
+
+.order-now {
+    position: absolute;
+    right: 40px;
+    bottom: 200px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Crete Round', serif;
+}
+
 /*  Car  */
 
 .car .car-image {
@@ -69,7 +83,7 @@ h2 {
   background-size: cover;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 250px;
 }
 .car .car-image .car-item {
   position: absolute;
@@ -155,13 +169,23 @@ h2 {
 
 /*  Order  */
 
-#order-page input {
-  width: 100%;
+#order-page .input-div,
+#order-page .textarea-div{
+    float: left;
+    width: 50%;
+}
+#order-page input,
+#order-page textarea{
+  width: 94%;
   padding: 5px;
-  margin: 10px 0;
+  margin: 10px 3%;
   outline: none;
   border-radius: 4px;
   border: 2px solid #fff;
+  font-family: 'Work Sans', sans-serif;
+}
+#order-page textarea {
+    height: 225px;
 }
 #order-page button {
   padding: 7px 20px;
@@ -194,24 +218,24 @@ h2 {
 
 /*  About  */
 
-#about-page .about-inner {
+#about-page .about-text,
+#about-page .about-img{
     float: left;
-    width: 45%;
+    width: 50%;
 }
-#about-page .page-content{
-    margin: 0 5%;
-    width: 90%;
+#about-page .about-text {
+    text-align: left;
+    padding: 0 15px;
+}
+#about-page .about-text p{
+    margin: 0;
 }
 #about-page .about-img{
-    background-image: url(../img/about.png);
-    background-position: right;
+    background-image: url(../img/taxi.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    bottom: 20%;
-    right: 0;
+    background-position: center;
+    height: 280px;
+    border-radius: 4px;
 }
 
 /*  Contact  */
@@ -227,5 +251,5 @@ h2 {
     cursor: pointer;
 }
 #contact-page .contact-inner i:hover{
-    color: #2F4F4F;
+    transform: scale(1.2);
 }

@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Tawria Taxi</title>
-
+    
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -20,7 +23,7 @@
 
         <div class="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a id="home" onclick="closeAll()"href="#">Home</a></li>
                 <li><a id="order" onclick="orderPageAppear()" href="#">Order</a></li>
                 <li><a id="price" onclick="pricePageAppear()" href="#">Price</a></li>
                 <li><a id="about" onclick="aboutPageAppear()" href="#">About us</a></li>
@@ -34,8 +37,17 @@
             <i class="fa fa-eercast" aria-hidden="true"></i>
             <h1>Tawria Taxi</h1>
         </div>
+        
+        <!-- Order now  -->
 
+    <div class="order-now">
+        <h2>Order now:</h2>
+        <p>608 998 998</p>
+        <p>+48 909 998 998</p>
+    </div>
+       
         <!--  Car  -->
+        
         <div class="car">
             <div class="car-image">
                 <div class="car-item car-item1">
@@ -56,11 +68,16 @@
             <div class="page-content">
                 <h2>Order taxi:</h2>
                 <form action="post">
-                    <input type="text" placeholder="From:">
-                    <input type="text" placeholder="To:">
-                    <input type="text" placeholder="Name:">
-                    <input type="text" placeholder="Phone number">
-                    <input type="text" placeholder="Email">
+                   <div class="input-div">
+                        <input type="text" placeholder="From:">
+                        <input type="text" placeholder="To:">
+                        <input type="text" placeholder="Name:">
+                        <input type="number" placeholder="Phone number:">
+                        <input type="email" placeholder="Email:">
+                    </div>
+                    <div class="textarea-div">
+                        <textarea name="" id="" placeholder="Your message:"></textarea>
+                    </div>
                     <button type="submit">SEND</button>
                 </form>
             </div>
@@ -75,18 +92,18 @@
                 <table>
                     <tr>
                         <td>– initial charge for all tariffs</td>
-                        <td>7,00 zł</td>
+                        <td>6,50 zł</td>
                     </tr>
                     <tr>
                         <td>– stopover charge for 1 hour for all tariffs</td>
                         <td>38,00 zł</td>
                     </tr>
                     <tr>
-                        <td>– tariff 1 ( 1 km from Monday to Saturday, from 6.00 to 22.00)</td>
+                        <td>– tariff 1 (1 km from Monday to Saturday, from 6.00 to 22.00)</td>
                         <td>2,50 zł</td>
                     </tr>
                     <tr>
-                        <td>– tariff 2 (1 km from 22.00 to 6.00 as well as on Sundays and festivals)</td>
+                        <td>– tariff 2 (1 km from 22.00 to 6.00 as well as on Sundays and holidays)</td>
                         <td>3,50 zł</td>
                     </tr>
                 </table>
@@ -99,7 +116,7 @@
                         <td>5,00</td>
                     </tr>
                     <tr>
-                        <td>– tariff 4 (1 km, from 22.00 to 6.00 as well as on Sundays and festivals)</td>
+                        <td>– tariff 4 (1 km, from 22.00 to 6.00 as well as on Sundays and holidays)</td>
                         <td>7,00</td>
                     </tr>
                 </table>
@@ -110,13 +127,13 @@
     <!--  About us  -->
    
         <div id="about-page" class="page">
-           <div class="about-img"></div>
-            <div class="page-content">
+           <div class="page-content">
                 <h2>About us</h2>
-                <div class="about-inner">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quisquam, ullam ipsum quidem reiciendis quasi, illo molestiae accusantium officiis vitae reprehenderit distinctio. Possimus temporibus dolor recusandae totam est, ipsa natus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus qui odit quis sit vero adipisci, ipsa unde nam. Sit amet ipsa dolorem cupiditate possimus magnam, rerum reiciendis dolore minus, beatae!Sit amet ipsa dolorem cupiditate possimus magnam, rerum reiciendis dolore minus, beatae!</p>
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quisquam, ullam ipsum quidem reiciendis quasi, illo molestiae accusantium officiis vitae reprehenderit distinctio. Possimus temporibus dolor recusandae totam est, ipsa natus. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus qui odit quis sit vero adipisci, ipsa unde nam. Sit amet ipsa dolorem cupiditate possimus magnam, rerum reiciendis dolore minus. Possimus temporibus dolor recusandae totam est, ipsa natus.</p>
                 </div>
+                <div class="about-img"></div>
             </div>
             <i onclick="aboutPageClose()" class="fa fa-times" aria-hidden="true"></i>
         </div>
